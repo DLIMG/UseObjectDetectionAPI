@@ -18,7 +18,7 @@ Python3.6
 ## 配置流程
 ### 1.为了环境干净，Anaconda新建一个虚拟环境  
 若网络受限，可切换至国内源创建；  
-`conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/`
+`conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/`  
 `conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/`  
 `conda config --set show_channel_urls yes`  
 `conda create -n Tensorflow1.12 python=3.6 ` 
