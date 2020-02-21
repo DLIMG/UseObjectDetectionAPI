@@ -45,7 +45,7 @@ b.将research文件解压到 （你的路径）/Anaconda/env/Tensorflow1.12/Lib/
 ### 5.编译proto文件
 a.到[GitHub](https://github.com/protocolbuffers/protobuf/releases/tag/v3.4.0)下载protobuf包：  
 ![](https://i.imgur.com/Bq0sh5w.png)  
-b.下载完后，将压缩包内的bin/protoc.exe 文件放入research/ 目录下；
+b.下载完后，将压缩包内的bin/protoc.exe 文件放入research/ 目录下；  
 c.在research/ 目录下打开powershell，执行如下命令：  
 `.\protoc.exe .\object_detection\protos\*.proto --python_out=.`  
 编译成功不会显示其他信息，进入（\research\object_detection\protos）目录，发现所有.proto文件已被编译为.py文件。  
@@ -70,5 +70,13 @@ b.进入到research 下执行：
 打开虚拟环境，转到（\research）目录下，输入命令：
 `python object_detection/builders/model_builder_test.py`  
 如图所示，安装成功：  
-![](https://i.imgur.com/DGngFsJ.png)
-
+![](https://i.imgur.com/DGngFsJ.png)  
+  
+### 9.运行Demo
+在Tensorflow1.12虚拟环境中运行Demo.py即可，运行过程中可能会缺少某个安装包，缺什么用pip install相应的安装包即可。  
+运行过程中需要下载预训练模型，和加载相应的配置文件。由于资源来自于github，下载可能会限速，这里提供我的[ssd_mobilenet_v1_coco_2017_11_17](https://pan.baidu.com/s/1cPndOpT9palYBqrkgwonmA)下载。  
+提取码：mol9  
+相应的配置文件来自于research/object_detection文件夹下的data文件夹，测试图片可以将research/object_detection文件夹下的test_image文件夹复制过来，整理完后文件如下：  
+![](https://i.imgur.com/u8K5KCg.png)    
+运行结果：  
+![](https://i.imgur.com/wWHR1Oe.png)  
