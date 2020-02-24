@@ -78,5 +78,7 @@ b.进入到research 下执行：
 提取码：mol9  
 相应的配置文件来自于research/object_detection文件夹下的data文件夹，测试图片可以将research/object_detection文件夹下的test_image文件夹复制过来，整理完后文件如下：  
 ![](https://i.imgur.com/u8K5KCg.png)    
-运行结果：  
+运行Demo.py结果：  
 ![](https://i.imgur.com/wWHR1Oe.png)  
+运行DetectInVideos.py结果：  
+![](https://github.com/DLIMG/UseObjectDetectionAPI/blob/master/ShowImage/show1.png)
